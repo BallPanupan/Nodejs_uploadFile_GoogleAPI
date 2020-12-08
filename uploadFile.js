@@ -74,7 +74,7 @@ function getAccessToken(oAuth2Client, callback) {
 function uploadFile(auth) {
   const drive = google.drive({version: 'v3', auth});
   var fileMetadata = {
-    'name': 'photo.jpg', // ชื่อ ภาพที่จะ Upload ขึ้น ไปยัง Google Drive
+    name: 'photo.jpg', // ชื่อ ภาพที่จะ Upload ขึ้น ไปยัง Google Drive
     parents: ['xxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'] //ตำแหน่งไฟล์ หรือ FolderID ของ Google Drive
   };
   var media = {
